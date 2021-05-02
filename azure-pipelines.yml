@@ -1,4 +1,11 @@
 # Maven
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'AIASG CyberSecurity Hackathon (33037f73-ed00-42fb-af20-6342e12009d2)'
+    appType: 'webApp'
+    WebAppName: 'webapptestda2021'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
